@@ -323,5 +323,4 @@
 
 - (NSURL*)libraryAddress;
 
-@property (nonatomic, retain) HGNaiveBayesTagTableViewController *nbttVC;
 @end

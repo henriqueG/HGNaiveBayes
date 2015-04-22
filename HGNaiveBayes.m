@@ -29,7 +29,7 @@
 #pragma mark - Initialization
 
 - (NSString*)groupIdentifier {
-    return @"group.paperstand.extension";
+    return @"your.app.identifier"; //if using App-Groups of iOS 8.
 }
 
 - (NSURL*)libraryAddress {
@@ -595,41 +595,5 @@
     return version;
 }
 
-//- (void)receivedFilesFromCloud:(NSArray*)files {
-//    BOOL exists = FALSE;
-//    for(NSMetadataItem *item in files) {
-//        
-//        NSString *filename = [item valueForAttribute:NSMetadataItemDisplayNameKey];
-//        
-//        NSLog(@"%@", filename);
-//        if ([filename isEqualToString:@"database.plist"]) {
-//            exists = TRUE;
-//            
-//            NSMutableDictionary *library = [[NSMutableDictionary alloc] initWithContentsOfURL:[item valueForKey:NSMetadataItemURLKey]];
-//            
-//            listOfWords = [library objectForKey:@"listOfWords"];
-//            listOfCategories = [library objectForKey:@"listOfCategories"];
-//            self.numberOfTags = [[library objectForKey:@"numberOfTags"] integerValue];
-//            self.numberOfLearnedPhrases = [[library objectForKey:@"numberOfPhrases"] integerValue];
-//            
-//            if ([library writeToURL:self.libraryAddress atomically:TRUE]) {
-//                [self.nbttVC prepareTableView:TRUE];
-//            }
-//        }   
-//    }
-//    
-//    if (!exists) {
-//        NSMutableDictionary *library = [[NSMutableDictionary alloc] init];
-//        NSString *libraryVersion = [NSString stringWithFormat:@"%ld.%ld.%ld", [[self libraryVersion] major], [[self libraryVersion] minor], [[self libraryVersion] revision]];
-//        [library setObject:libraryVersion forKey:@"libraryVersion"];
-//        
-//        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-//        
-//        if ([library writeToURL:self.libraryAddress atomically:TRUE] && ([userDefaults boolForKey:@"useCloud"] && [userDefaults objectForKey:@"useCloud"] != nil)) {
-//            [[HGCloudManager sharedManager] writeOnCloudWithPath:[[[[HGCloudManager sharedManager] ubiquitousURL] URLByAppendingPathComponent:@"Documents" isDirectory:TRUE] URLByAppendingPathComponent:@"database.plist"] localURL:self.libraryAddress];
-//        }
-//    }
-//    
-//}
 
 @end
