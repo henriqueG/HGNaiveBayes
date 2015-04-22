@@ -2,7 +2,7 @@
 A Simple Naive Bayes classifier wrapper.
 
 ## What is?
-This answer on Stack Overflow explains it really well: http://stackoverflow.com/a/10062702
+This answer on Stack Overflow explains really well what is the Naive Bayes classifier. http://stackoverflow.com/a/10062702
 
 
 ## How to setup?
