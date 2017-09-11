@@ -4,6 +4,7 @@
 //
 //  Created by Henrique Galo on 4/20/14.
 //  Copyright (c) 2014 Henrique Galo. All rights reserved.
+//  Long time ago.
 //
 
 #import "HGNaiveBayes.h"
