@@ -37,6 +37,3 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-##More Details
-https://threeleavesapps.wordpress.com/2015/04/22/open-source-2/
